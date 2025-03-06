@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"/>
+    <title>Ex03</title>
+    <style>
+        .green-text {
+            color: green;
+        }
+    </style>
+    <style>
+        .line-1 {
+            background-color: rgb(249, 240, 240); 
+        }
+    </style>
+    <style>
+        .special {
+            font-family: 'Arial', sans-serif;
+            font-size: 13px;
+        }
+    </style>
+    <style>
+       #wrapper{
+        max-width: 700px;
+        margin: 0px auto;
+       }
+    </style>
+    <style>
+        #head-content{
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+        }
+    </style>
+    <style>
+        button{
+            color: white;
+            background-color: rgb(17, 159, 102);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head-content">
+            <div>
+                <form action="" method="post" enctype="multipart/form-data" id="">
+                    <select name="tablenumber" id="tablenumber">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="9">9</option>
+                        <option value="15" selected>15</option>
+                    </select>
+            </div>
+            <div>
+                <form action="" method="post" enctype="multipart/form-data" id="">
+                    <input type="search" name="tablesearch" placeholder="Nhập tiêu đề tìm kiếm->Nhấn Enter">
+                    <button>+ Thêm mới</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <table class="special" cellpadding="5" cellspacing="0" border="1" width="700">
+                <thead>
+                <th>STT</th>
+                <th align="left">Tên đặc tính kỹ thuật</th>
+                <th align="left">Ngày sửa</th>
+                <th align="left">Thứ tự</th>
+                <th align="left">Trạng thái</th>
+                <th align="left"><i class="fa-solid fa-list-check"></i> Tác vụ</th>
+                </thead>
+                <tbody>
+                    <tr class="line-1">
+                        <td align="right">1</td>
+                        <td>Đặc trưng</td>
+                        <td>20/7/2020</td>
+                        <td>1</td>
+                        <td class="green-text">Hoạt động</td>
+                        <td align="center">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">2</td>
+                        <td>Thông số</td>
+                        <td>20/7/2020</td>
+                        <td>2</td>
+                        <td class="green-text">Hoạt động</td>
+                        <td align="center">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr class="line-1">
+                        <td align="right">3</td>
+                        <td>Bảo quản</td>
+                        <td>20/7/2020</td>
+                        <td>3</td>
+                        <td class="green-text">Hoạt động</td>
+                        <td align="center">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">4</td>
+                        <td>Bảo hành</td>
+                        <td>20/7/2020</td>
+                        <td>4</td>
+                        <td class="green-text">Hoạt động</td>
+                        <td align="center">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                    <tr class="line-1">
+                        <td align="right">5</td>
+                        <td>Cam kết</td>
+                        <td>20/7/2020</td>
+                        <td>5</td>
+                        <td class="green-text">Hoạt động</td>
+                        <td align="center">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <span><b>Tổng số có:</b></span>
+                            <i class="fa-solid fa-5"></i>
+                            <span><b> đặc tính kỹ thuật</b></span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

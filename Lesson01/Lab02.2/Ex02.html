@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <table border="1" cellpadding="5" cellspacing="0" width="400">
+            <tr>
+                <td>
+                    <label for="name">Họ và tên</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Địa chỉ</label>
+                </td>
+                <td>
+                    <input type="text" name="address" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phonenumber">Điện thoại</label>
+                </td>
+                <td>
+                    <input type="number" name="phonenumber" id="phonenumber">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Phái</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="nam"><label for="nam">Nam</label>
+                    <input type="radio" name="gender" id="nu"><label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="job">Nghề nghiệp</label>
+                </td>
+                <td>
+                    <select name="job" id="job">
+                        <option value="BS">Bác sỹ</option>
+                        <option value="KS">Kỹ sư</option>
+                        <option value="GV" selected>Giáo viên</option>
+                        <option value="KH">Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="items">Chọn sản phẩm tham gia</label>
+                </td>
+                <td>
+                    <label for="kdr"></label><input type="checkbox" name="items" id="kdr">Kem đánh răng</label><br>
+                    <label for="bg"><input type="checkbox" name="items" id="bg">Bột giặt</label><br>
+                    <label for="dgd"></label><input type="checkbox" name="items" id="dgd">Dầu gội đầu</label><br>
+                    <label for="st"></label><input type="checkbox" name="items" id="st">Sữa tắm</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="numberpl">Số người dự đoán tham gia</label>
+                </td>
+                <td>
+                    <input type="number" name="numberpl" id="numberpl">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" name="btn_button" id="btn_button">Đồng ý</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

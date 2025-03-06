@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex08</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Thông tin đăng ký</h1>
+        </div>
+        <div class="main-content">
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <td>
+                        <label for="name">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="namel">Tên đăng nhập</label>
+                    </td>
+                    <td>
+                        <input type="text" name="namel" id="namel">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mật khẩu</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Giới tính</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="nam"><label for="nam">Nam</label>
+                        <input type="radio" name="gender" id="nu"><label for="nu">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="code">Ngôn ngữ lập trình</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="code" id="nnc"><label for="nnc">Ngôn ngữ C#</label><br>
+                        <input type="checkbox" name="code" id="nnj"><label for="nnj">Ngôn ngữ Java</label><br>
+                        <input type="checkbox" name="code" id="nnp"><label for="nnp">Ngôn ngữ PHP</label><br>
+                        <input type="checkbox" name="code" id="nnk"><label for="nnk">Ngôn ngữ khác</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="provide">Tỉnh thành</label>
+                    </td>
+                    <td>
+                        <select name="provide" id="provide">
+                            <option value="HN" selected>Hà Nội</option>
+                            <option value="HCM">TP.HCM</option>
+                            <option value="DN">Đà Nẵng</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="btn_button"></label>
+                    </td>
+                    <td>
+                        <button type="submit" name="btn_button" id="btn_button">Đăng ký</button>
+                        <button type="reset" name="btn_button" id="btn_button">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

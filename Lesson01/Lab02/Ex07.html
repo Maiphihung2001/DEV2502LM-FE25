@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heder">
+            <h2>WUFOO</h2>
+        </div>
+        <div class="main-content">
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <td colspan="2" >
+                        <h2>To Do List</h2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="item">Item</label><br>
+                        <input type="text" name="Item" id="item">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="mota">Description</label><br>
+                        <textarea name="mota" id="mota" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="priority">Priority</label><br>
+                        <select name="priority" id="priority">
+                            <option value="L">Low</option>
+                            <option value="H">High</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="category">Category</label><br>
+                        <select name="category" id="category">
+                            <option value="P">Personal</option>
+                            <option value="Pl">Public</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="dd">Due Date</label><br>
+                        <input type="number" name="dd" id="mm">/
+                        <input type="number" name="dd" id="day">/
+                        <input type="number" name="dd" id="y"><br>
+                        <label for="mm">MM</label>
+                        <label for="day">DD</label>
+                        <label for="y">YYYY</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="status">Status</label><br>
+                        <input type="checkbox" name="status" id="d"><label for="d">Done.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" name="btn_button" id="btn_button">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

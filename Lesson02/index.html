@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form html</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <!-- input kiểu text -->
+        <input type="text" name="" id="" value="" placeholder="Username"><br>
+        <!-- input kiểu password -->
+        <input type="password" name="password" id="password" placeholder="password"><br>
+        <!-- input kiểu hiden -->
+        <input type="hidden" name="id" id="hidden"><br>
+        <!-- input kiểu checkbox -->
+        <input type="checkbox" name="hobby" value="bóng đá" id="bongda">
+        <label for="bongda">Bóng đá</label><br>
+        <input type="checkbox" name="hobby" value="bóng chuyền" id="bongchuyen">
+        <label for="bongchuyen">Bóng chuyền</label><br>
+        <input type="checkbox" name="hobby" value="bơi lội" id="boiloi">
+        <label for="boiloi">Bơi lội</label><br>
+        <!-- input kiểu radio -->
+         <input type="radio" name="gioitinh" value="true" id="nam">
+         <label for="nam">Nam</label>
+         <input type="radio" name="gioitinh" value="false" id="nu">
+         <label for="nu">Nữ</label>
+         <input type="radio" name="gioitinh" value="null" id="khac">
+         <label for="khac">Khác</label>
+         <br>
+         <!-- input kiểu botton -->
+        <input type="button" value="Hiển thị" id="btn_button" name="btn_button"><br>
+         <!-- input kiểu sumbit -->
+        <input type="submit" name="btn_button" id="btn_button" value="kiểm tra username"><br>
+         <!-- input kiểu reset --> 
+        <input type="reset" value="làm lại" id="btn_button" name="btn_button"><br>
+         <!-- input kiểu file -->
+         <input type="file" name="avatar" id="avatar"><br>
+         <!-- input kiểu color -->
+         <input type="color" name="color" id="color"> 
+         <label for="color">Chọn màu yêu thích</label><br>
+         <!-- input kiểu thời gian date/datetime-local -->
+         <input type="date" name="date" id="date">
+         <input type="datetime-locald" name="datetime-local" id="datetime-local"><br>
+         <input type="month" name="month" id="month"><br>
+         <input type="time" name="time" id="time"><br>
+         <input type="week" name="week" id="week"><br>
+        <!-- input kiểu email -->
+         <input type="email" name="email" id="email">
+        <!-- input kiểu number -->
+         <input type="number" name="number" id="number" placeholder="number"><br>
+         <!-- input kiểu select-option -->
+          <select name="city" id="city">
+            <option value="HN">Hà Nội</option>
+            <option value="HCM">HCM</option>
+            <option value="DN">Đà Nẵng</option>
+            <option value="HY">Hưng Yên</option>
+          </select>
+          <!-- input kiểu range -->
+           <input type="range" name="range" id="range" min="1" max="100" value="20"><br>
+          <!-- input kiểu search -->
+           <input type="search" name="search" id="search" placeholder="search"><br>
+           <!-- textarea -->
+            <textarea name="mota" id="mota" cols="3" rows="5"></textarea>
+
+    </form>
+</body>
+</html>

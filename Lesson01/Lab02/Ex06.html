@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06</title>
+</head>
+<body>
+    <table cellpadding="5" cellspacing="0">
+        <tr>
+            <td colspan="2"><h2>Đăng ký thông tin người sử dụng</h2></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="name">Tên đăng nhập</label>
+            </td>
+            <td>
+                <input type="text" name="name" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Mật khẩu</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Nhập lại mật khẩu</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="rpassword">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Giới tính</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="nam"><label for="nam">Nam</label>
+                <input type="radio" name="gender" id="nu"><label for="nu">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Độ tuổi</label>
+            </td>
+            <td>
+                <input type="radio" name="age" id="u13"><label for="u13">Dưới 13 tuổi</label>
+                <input type="radio" name="age" id="u137"><label for="u137">Từ 13 đến 17 tuổi</label>
+                <input type="radio" name="age" id="u182"><label for="u182">Từ 18 đến 25 tuổi</label>
+                <input type="radio" name="age" id="o25"><label for="025">Trên 25 tuổi</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="hobby">Sở thích của bạn</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" id="AN"><label for="AN">Âm nhạc</label>
+                <input type="checkbox" name="hobby" id="G"><label for="G">Game</label>
+                <input type="checkbox" name="hobby" id="TT"><label for="TT">Thể thao</label>
+                <input type="checkbox" name="hobby" id="DL"><label for="DL">Du lịch</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="job">Nghề nghiệp</label>
+            </td>
+            <td>
+                <select name="job" id="job">
+                    <option value="">Chọn ngành nghề</option>
+                    <option value="GV">Giáo viên</option>
+                    <option value="NN">Công chức nhà nước</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mota">Mô tả bản thân</label>
+            </td>
+            <td>
+                <textarea name="mota" id="mota" rows="3" placeholder="Mô tả về bản thân ..."></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="btn_button"></label>
+            </td>
+            <td>
+                <button type="submit" name="btn_button" id="btn_button">Đăng ký</button>
+                <button type="reset" name="btn_button" id="btn_button">Làm lại</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
