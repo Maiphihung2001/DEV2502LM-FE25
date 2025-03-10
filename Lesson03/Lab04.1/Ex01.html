@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        ul li{
+            list-style: none;
+            padding: 0.5rem;
+        }
+        .menu-1>ul{
+            display:flex;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu-1{
+            background-color: #2d2d2d;
+            border-radius: 5px;
+        }
+        .menu-1>ul>li+li {
+            border-left: 1px solid #8d8b8b;
+        }
+        .menu-1>ul>li:hover>a,
+        .menu-2>ul>li:hover>a{
+            color: green;
+        }
+        .menu-1>ul>li{
+            position: relative;
+        }
+        .menu-2{
+            position: absolute;
+            top: 100%;
+            background-color: #000;
+            width: 100%;
+            left: 0;
+            display: none;
+        }
+        .menu-1>ul>li:hover>.menu-2{
+            display: block;
+        }
+        .menu-2>ul>li{
+            border-bottom: 1px solid #8d8b8b;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu-1">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <nav class="menu-2">
+                    <ul>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">PHP</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

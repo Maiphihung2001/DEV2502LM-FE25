@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07</title>
+    <style>
+        *{
+            font-size: 13px;
+        }
+        h1{
+            color: rgb(0, 128, 2);
+        }
+        span{
+            color: rgb(224, 170, 19);
+        }
+        label{
+            color: rgb(141, 3, 3);
+        }
+        fieldset{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" id="">
+        <h1>About</h1>
+        <p>
+        It can be ... in an <span>extreme minority</span>. While open ... up to <span>91% male</span>. If we can ... capabilities <span><i>we can begin to change this landscape</i></span>.
+        </p>
+        <h1>Our Location</h1>
+        <div>
+            <nav>
+                <ul>
+                    <li>USA
+                        <nav>
+                            <ul>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">Columbus</a></li>
+                                <li><a href="#">Austin</a></li>
+                                <li><a href="#">Philly</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>WORLD
+                        <nav>
+                            <ul>
+                                <li><a href="#">Ottawa</a></li>
+                                <li><a href="#">Sydney</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Upcoming Classes</h1>
+        <table border="1" cellspacing="2" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: blue;">New York</td>
+                    <td style="color: purple;">JavaScript&jQuery</td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">San Francisco</td>
+                    <td style="color: purple;">HTML & CSS</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><br>
+        <label for="location">Location: </label>
+        <select name="location" id="location">
+            <option value="SF" selected>San Francisco</option>
+            <option value="NY">New York</option>
+        </select><br>
+        <fieldset>
+            <legend>Gender: </legend>
+            <label for="nu">Female</label><input type="radio" name="gender" id="nu">
+            <label for="nam">Male</label><input type="radio" name="gender" id="nam">
+        </fieldset><br>
+        <label for="experience">Experience:</label><br>
+        <textarea name="experience" id="experience"></textarea><br>
+        <button type="submit">Sign up</button><br><br>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Flickr</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ chọn</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        /* bộ chọn tag */
+        div{
+            color: red;
+        }
+        /* bộ chọn tag01 tag02 */
+        p span{
+            background-color: yellow;
+        }
+        /* bộ chọn tag01>tag02 */
+        p>span{
+            background-color: green;
+        }
+        /* bộ chọn tag01,tag02 */
+        p,span{
+            color: blue;
+            opacity: 0.5;
+        }
+        /* bộ chọn tag01+tag02 */
+        h2+p{
+            background-color: #ccc;
+        }
+        p{
+            font-size: 13;
+        }
+        span{
+            font-size: 1em;
+        }
+        /* Lưu ý khi viết CSS */
+        /* 1. CSS viết sau sẽ được ưu tiên sử dụng (cùng cấp và cùng tên)*/
+        /* 2. !important > Id > thuộc tính > class > tên thẻ (khác tên)*/
+        /* 3. CSS sẽ ưu tiên bộ chọn chỏ càng chi tiết/ gần tới thẻ*/
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Bộ chọn tag</h2>
+        <p>Bộ chọn tag</p>
+    </div>
+
+    <div>
+        <h2>Bộ chọn tag01 tag02</h2>
+        <p>Nội dung <span>tag01 tag02</span></p>
+    </div>
+    <div>
+        <h2>Bộ chọn tag01>tag02</h2>
+        <p>Bộ chọn <span>tag01>tag02</span></p>
+        <p>
+            <label for="">Bộ chọn<span>tag01>tag02</span></label>
+        </p>
+    </div>
+
+</body>
+</html>

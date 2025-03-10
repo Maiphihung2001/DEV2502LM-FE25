@@ -1,0 +1,64 @@
+.clearfix{
+    overflow: hidden;
+    clear: both;
+}
+header{
+    background: #2d303a;
+    width: 940px;
+    margin: 0 auto;
+    height: 100px;
+}
+.topnav{
+    width: 940px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+@font-face{
+    font-family: Lato-Bold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+@font-face{
+    font-family: Lato-Bold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+@font-face{
+    font-family: Lato-Bold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+#logo{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#logo a{
+    color: #fff;
+    font-family: Lato-Bold;
+    font-size: 25px;
+}
+#logo a span{
+    color: #f06c64;
+}
+.topnav nav{
+    float: right;
+    width: 431px;
+    text-align: center;
+}
+.topnav nav ul{
+    display: flex;
+    list-style: none;
+}
+.topnav nav ul li a{
+    color: #fff;
+    display: block;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    text-align: center;
+    padding: 0.5rem;
+}
+.selected,
+.topnav nav ul li a:hover{
+    color: #f06c64;
+}

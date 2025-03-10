@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 0.5rem;
+        }
+        nav ul{
+            display: flex;
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+        nav ul li a{
+            color: #403f3f;
+            text-decoration: none;
+        }
+        nav>ul>li+li{
+            border-left: 2px solid red;
+        }
+        nav ul :hover{
+            color: #fff;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

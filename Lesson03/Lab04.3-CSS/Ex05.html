@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        ul li{
+            list-style: none;
+            padding: 0.5rem;
+        }
+        .menu-1>ul{
+            display:flex;
+            background-color: #ccc;
+        }
+        .menu-1>ul>li>a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu-1>ul>li:hover{
+            background-color: #000;
+        }
+        .menu-1>ul>li{
+            position: relative;
+        }
+        .menu-2{
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 100%;
+            display: flex;
+            /* display: none; */
+        }
+        .menu-2>ul>li>a{
+            text-decoration: none;
+            color: red;
+        }
+        /* .menu-1>ul>li:hover>.menu-2{
+            display: block;
+        } */
+
+    </style>
+</head>
+<body>
+    <nav class="menu-1">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Các khóa đào tạo</a>
+                <nav class="menu-2">
+                    <ul>
+                        <li><a href="#">Chuyên đề WEB - PHP</a></li>
+                        <li><a href="#">Chuyên đề JAVA</a></li>
+                        <li><a href="#">Chuyên đề .NET</a></li>
+                        <li><a href="#">Chuyên đề Mobile</a></li>
+                        <li><a href="#">Chuyên đề NETWORK/SECURITY</a></li>
+                        <li><a href="#">Chuyên đề khác</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#">Lập trình cho trẻ em</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Lịch khai giảng</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Tiện ích</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

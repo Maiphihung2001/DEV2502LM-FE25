@@ -1,0 +1,148 @@
+#navTop{
+    width: 960px;
+    margin: 0 auto;
+    background: #ccc;
+    height: 40px;
+}
+#navTop ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#navTop ul li{
+    float: left;
+    border-right: 1px solid #fff;
+}
+#navTop ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+}
+.selected,
+#navTop ul li a:hover{
+    background: red;
+    color: #fff;
+}
+#navTop ul li>ul{
+    position: absolute;
+    width: 159px;
+    background: #666;
+}
+#navTop ul li>ul li{
+    border-bottom: 1px solid #fff;
+}
+#navTop ul li>ul li>ul{
+    margin-left: 159px;
+    margin-top: 0px;
+}
+
+/* Ex02 */
+
+#mainNav{
+    width: 200px;
+    background: #ccc;
+}
+#mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#mainNav ul li{
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+#mainNav ul li a{
+    text-decoration: none;
+    display: block;
+    width: 85%;
+    padding: 10px 15px;
+}
+.selected,
+#mainNav ul li a:hover{
+    background: red;
+    color: #fff;
+}
+#mainNav ul li>ul{
+    position: absolute;
+    margin-left: 200px;
+    width: 200px;
+    background: #666;
+    top: 0;
+    visibility: hidden;
+}
+#mainNav ul li>ul li{
+    border-left: 1px #fff;
+}
+#mainNav ul li:hover>ul{
+    visibility: visible;
+}
+
+/* Ex03 */
+
+.clearfix{
+    overflow: hidden; /* chống tràn */
+    clear: both; /* xóa tất cả đối tượng trên cùng hàng */
+}
+#main{
+    width: 960px;
+    margin: 0 auto;
+}
+#main nav{
+    width: 100%;
+}
+#main nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#main nav ul li{
+    float: left;
+    margin-right: 5px;
+}
+#main nav ul li a{
+    display: block;
+    padding: 5px 15px;
+    border: 1px #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.selected,
+#main nav ul li a:hover{
+    background: red;
+    color: #fff;
+}
+/* Danh sách hiển thị theo danh mục */
+.item{
+    float: left;
+    margin-right: 5px;
+    width: 236px;
+}
+.itemfix{
+    margin: 0;
+}
+.item img{
+    border-radius: 5px;
+    height: 150px;
+    width: 236px;
+}
+#pager{
+    width: 100%;
+    text-align: right;
+}
+#pager ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#pager ul li{
+    float: right;
+    margin-left: 5px;
+}
+#pager ul li a{
+    border: 1px solid #666;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
