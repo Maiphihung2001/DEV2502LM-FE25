@@ -18,12 +18,12 @@ header{
     src: url("../fonts/Lato-Bold.ttf");
 }
 @font-face{
-    font-family: Lato-Bold;
-    src: url("../fonts/Lato-Bold.ttf");
+    font-family: Lato-Black;
+    src: url("../fonts/Lato-Black.ttf");
 }
 @font-face{
-    font-family: Lato-Bold;
-    src: url("../fonts/Lato-Bold.ttf");
+    font-family: Lato-Light;
+    src: url("../fonts/Lato-Light.ttf");
 }
 #logo{
     width: 200px;
@@ -61,4 +61,63 @@ a{
 .selected,
 .topnav nav ul li a:hover{
     color: #f06c64;
+}
+#banner{
+    background: #f06c64;
+    padding: 50px 0;
+}
+#ourServices{
+    padding: 66px 0;
+    background: #f2f2f2;
+}
+#portfolio h2,
+#aboutUs h3,
+#getaQuote h3,
+#ourService h1{
+    font-family: Lato-Balck;
+    font-size: 30px;
+    color: #666d89;
+}
+#portfolio p,
+#aboutUs p,
+#getaQuote p,
+#ourService p {
+    font-family: Lato-Light;
+    color: #767e9e;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 30px 0;
+}
+.itemService{
+    width: 220px;
+    float: left;
+    margin-left: 150px;
+    margin-right: 80px;
+}
+#portfolio{
+    background: #2d303a;
+    padding: 30px;
+}
+.portfolio{
+    margin-bottom: 18px;
+}
+.portfolio ul{
+    list-style: none;
+}
+.portfolio ul li{
+    float: left;
+    margin-right: 10px;
+}
+.portfolio ul li a{
+    display: block;
+    color: #767e9e;
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid #767e9e;
+    border-radius: 5px;
+}
+.selectedx,
+.portfolio ul li a:hover{
+    border: 1px solid #c5c5c5 !important;
+    color: #c5c5c5 !important;
 }

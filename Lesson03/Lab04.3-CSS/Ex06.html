@@ -13,7 +13,6 @@
         }
         .main>ul>li{
             list-style: none;
-            padding: 1rem;
         }
         .main{
             border: 2px solid red;
@@ -22,6 +21,8 @@
         .main>ul>li>a{
             color: #000;
             text-decoration: none;
+            display: block;
+            padding: 17px;
         }
         .main>ul>li{
             position: relative;
@@ -29,25 +30,46 @@
         .item{
             position: absolute;
             border: 2px solid blue;
-            width: 100%;
-            left: 200px;
+            width: 400px;
+            left: 210px;
+            top: -90px;
+            height: 430px;
         }
         .item>ul{
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 400px;
+            height: 430px;
         }
         .item>ul>li{
             list-style: none;
             padding: 0.5rem;
+            width: 200px;
         }
         .item>ul>li>a{
             text-decoration: none;
             color: #000;
         }
-        .main>ul>li:hover{
-            background-color: red;
-        }
         .main>ul>li>a:hover{
+            background-color: red;
             color: #fff;
+        }
+        .item>ul>li>nav>ul{
+            list-style:outside;
+            padding: 8px;
+        }
+        .item>ul>li>nav>ul>li{
+            padding: 0.5px;
+        }
+        .item>ul>li>nav>ul>li>a{
+            color: #000;
+            text-decoration: none;
+            display: block;
+            padding:2px;
+        }
+        .item>ul>li>nav>ul>li>a:hover{
+            color: red
         }
     </style>
 </head>
@@ -59,8 +81,41 @@
             <li><a href="#">Công cụ & Dụng cụ</a>
                 <nav class="item">
                     <ul>
-                        <li><a href="#">Máy khoan</a></li>
-                        <li><a href="#">Máy hàn điện tử</a></li>
+                        <li>
+                            <a href="#"><b>Máy khoan</b></a>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Máy khoan pin</a></li>
+                                    <li><a href="#">Máy khoan động lực</a></li>
+                                    <li><a href="#">Máy khoan bê tông, Máy khoan búa</a></li>
+                                    <li><a href="#">Máy đục bê tông</a></li>
+                                    <li><a href="#">Máy khoan cầm tay gia đình</a></li>
+                                    <li><a href="#">Máy khoan mini</a></li>
+                                    <li><a href="#">Máy khoan rút lõi bê tông</a></li>
+                                    <li><a href="#">Máy khoan góc</a></li>
+                                    <li><a href="#">Máy khoan bàn</a></li>
+                                    <li><a href="#">Máy khoan từ</a></li>
+                                    <li><a href="#">Máy bơm nước chạy dầu</a></li>
+                                    <li><a href="#">Máy bơm nước chạy xăng</a></li>
+                                    <li><a href="#">Máy gieo hạt</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href="#"><b>Máy hàn điện tử</b></a>
+                            <nav>
+                            <ul>
+                                <li><a href="#">Máy hàn que</a></li>
+                                <li><a href="#">Máy cắt plasma</a></li>
+                                <li><a href="#">Máy hàn Tig</a></li>
+                                <li><a href="#">Máy hàn Mag</a></li>
+                                <li><a href="#">Máy hàn Mig</a></li>
+                                <li><a href="#">Máy hàn đa năng</a></li>
+                                <li><a href="#">Biến thế hàn</a></li>
+                                <li><a href="#">Máy hàn công nghiệp</a></li>
+                            </ul>
+                        </nav>
+                        </li>
                     </ul>
                 </nav>
             </li>

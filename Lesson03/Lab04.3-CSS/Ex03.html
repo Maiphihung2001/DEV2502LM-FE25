@@ -12,7 +12,6 @@
         }
         ul li{
             list-style: none;
-            padding: 1rem;
         }
         .menu-1>ul{
             display:flex;
@@ -21,14 +20,14 @@
         a{
             text-decoration: none;
             color: #484646;
+            display: block;
+            padding: 0.8rem;
         }
         .menu-1>ul>li+li {
             border-left: 2px solid red;
         }
         .menu-1>ul>li>a:hover{
             color: #fff;
-        }
-        .menu-1>ul>li:hover{
             background-color: green;
         }
         .menu-1>ul>li{
@@ -41,6 +40,10 @@
             width: 300px;
             left: 0;
             display: none;
+            border-radius: 5px;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
         }
         .menu-2>ul>li:hover{
             background-color: green;
